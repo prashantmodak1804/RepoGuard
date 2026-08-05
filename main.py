@@ -1,14 +1,13 @@
-import sys
-from pathlib import Path
 import typer
 from rich.console import Console
 from rich.table import Table
 
-from manifest_parser import parse_manifest
 from license_agent import check_compliance
+from manifest_parser import parse_manifest
 
 app = typer.Typer(help="RepoGuardian License Auditor")
 console = Console()
+
 
 @app.command(name="audit")
 def audit(path: str):
@@ -47,7 +46,7 @@ def audit(path: str):
             item["version"],
             item["license"],
             status_style,
-            item["citation"]
+            item["citation"],
         )
 
     console.print(table)
@@ -57,17 +56,21 @@ def audit(path: str):
         f.write("| Package | Version | License | Status | Citation |\n")
         f.write("|---|---|---|---|---|\n")
         for item in results:
-            f.write(f"| {item['package']} | {item['version']} | {item['license']} | {item['status']} | {item['citation']} |\n")
+            f.write(
+                f"| {item['package']} | {item['version']} | {item['license']} | {item['status']} | {item['citation']} |\n"
+            )
 
     if has_denied:
         raise typer.Exit(code=1)
     else:
         raise typer.Exit(code=0)
 
+
 @app.command(name="version")
 def version():
     """Prints tool version."""
     console.print("RepoGuardian v1.0.0")
+
 
 if __name__ == "__main__":
     app()
