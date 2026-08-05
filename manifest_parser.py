@@ -1,4 +1,5 @@
 import json
+import re
 
 def parse_manifest(file_path: str) -> list[dict]:
     """
@@ -51,12 +52,14 @@ def parse_manifest(file_path: str) -> list[dict]:
                     # Check if the line contains a package specification (e.g., `package==1.2.3`)
                     if '==' in line or '>=' in line or '<=' in line:
                         # Split the line into package and version parts
-                        package, version = line.split('==') if '==' in line else line.split('>=') if '>=' in line else line.split('<=')
+                        match = re.split(r'(==|>=|<=)', line, 1)
+                        package = match[0].strip()
+                        version = match[1] + match[2].strip()
                         
                         # Create a dictionary to store the package information
                         package_info = {
-                            "package": package.strip(),
-                            "version": version.strip(),
+                            "package": package,
+                            "version": version,
                             "manifest_type": "pip"
                         }
                         

@@ -1,12 +1,13 @@
 import json
 
-def check_compliance(packages, policy_path):
+def check_compliance(packages, policy_path, license_db_path='license_db.json'):
     """
     This function checks the compliance of the given packages against the policy defined in the policy.json file.
     
     Args:
     packages (list[dict]): A list of dictionaries containing package information.
     policy_path (str): The path to the policy.json file.
+    license_db_path (str): The path to the license database file. Defaults to 'license_db.json'.
     
     Returns:
     list[dict]: A list of dictionaries containing the compliance status of each package.
@@ -34,7 +35,7 @@ def check_compliance(packages, policy_path):
                 
                 # Try to find the license of the package in the license database
                 try:
-                    with open('license_db.json', 'r') as license_db_file:
+                    with open(license_db_path, 'r') as license_db_file:
                         # Load the license database
                         license_db = json.load(license_db_file)
                         
@@ -46,19 +47,19 @@ def check_compliance(packages, policy_path):
                             # Check the compliance of the package against the policy
                             if compliance_result["license"] in policy_data["denied"]:
                                 compliance_result["status"] = "denied"
-                                compliance_result["citation"] = f"Package {package['package']} with license {compliance_result['license']} is denied by policy."
+                                compliance_result["citation"] = f"license '{compliance_result['license']}' matches the 'denied' list in policy.json"
                             elif compliance_result["license"] in policy_data["warning"]:
                                 compliance_result["status"] = "warning"
-                                compliance_result["citation"] = f"Package {package['package']} with license {compliance_result['license']} is warned by policy."
+                                compliance_result["citation"] = f"license '{compliance_result['license']}' matches the 'warning' list in policy.json"
                             elif compliance_result["license"] in policy_data["allowed"]:
                                 compliance_result["status"] = "allowed"
-                                compliance_result["citation"] = f"Package {package['package']} with license {compliance_result['license']} is allowed by policy."
+                                compliance_result["citation"] = f"license '{compliance_result['license']}' matches the 'allowed' list in policy.json"
                             else:
                                 compliance_result["status"] = "unknown"
-                                compliance_result["citation"] = f"Package {package['package']} with license {compliance_result['license']} has unknown status."
+                                compliance_result["citation"] = f"license '{compliance_result['license']}' has unknown status"
                         else:
                             compliance_result["status"] = "unknown"
-                            compliance_result["citation"] = f"Package {package['package']} has unknown license."
+                            compliance_result["citation"] = f"no entry for '{package['package']}' in {license_db_path} — license could not be verified"
                 
                 # Handle any exceptions that occur during compliance checking
                 except Exception as e:
