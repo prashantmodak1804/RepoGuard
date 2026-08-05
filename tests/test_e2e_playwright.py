@@ -1,5 +1,5 @@
-import pytest
 import subprocess
+
 
 def test_cli_audit_e2e():
     result = subprocess.run(['python', 'main.py', 'audit', 'examples/package.json'], capture_output=True, text=True)

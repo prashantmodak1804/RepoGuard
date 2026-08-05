@@ -1,5 +1,5 @@
-import pytest
 from manifest_parser import parse_manifest
+
 
 def test_package_json():
     with open('examples/package.json', 'r') as file:

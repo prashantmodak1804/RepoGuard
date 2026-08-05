@@ -1,6 +1,7 @@
 import json
 import re
 
+
 def parse_manifest(filepath):
     if filepath.endswith('.json'):
         try:

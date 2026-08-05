@@ -1,6 +1,6 @@
-import pytest
 from license_agent import check_compliance
 from manifest_parser import parse_manifest
+
 
 def test_allowed():
     with open('tests/policy_allowed.json', 'w') as file:
