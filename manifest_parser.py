@@ -1,61 +1,43 @@
 import json
 import re
 
-def parse_manifest(file_path: str) -> list[dict]:
-    """
-    This function detects whether the file is `package.json` or `requirements.txt` and parses it accordingly.
-    
-    Args:
-    file_path (str): The path to the manifest file.
-    
-    Returns:
-    list[dict]: A standardized list of dictionaries containing package information.
-    """
-    packages = []
-    
-    # Check if the file is `package.json`
-    if file_path.endswith('package.json'):
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-            dependencies = data.get('dependencies', {})
-            dev_dependencies = data.get('devDependencies', {})
-            all_dependencies = {**dependencies, **dev_dependencies}
-            
-            # Iterate over the combined dependencies
-            for package, version in all_dependencies.items():
-                package_info = {
-                    "package": package,
-                    "version": version,
-                    "manifest_type": "npm"
-                }
-                packages.append(package_info)
-    
-    # Check if the file is `requirements.txt`
-    elif file_path.endswith('requirements.txt'):
-        with open(file_path, 'r') as file:
-            for line in file:
-                # Strip the line of leading and trailing whitespace
-                line = line.strip()
-                
-                # Check if the line contains a package specification (e.g., `package==1.2.3`)
-                if '==' in line or '>=' in line or '<=' in line:
-                    # Split the line into package and version parts
-                    match = re.split(r'([==|>=|<=])', line, maxsplit=1, flags=re.IGNORECASE)
-                    package = match[0].strip()
-                    version = match[1] + match[2].strip()
-                    
-                    # Handle package names with hyphens
-                    if '-' in package:
-                        package = package.replace('-', '\\-')
-                    
-                    package_info = {
-                        "package": package,
-                        "version": version,
-                        "manifest_type": "pip"
-                    }
-                    packages.append(package_info)
-                else:
-                    # If the line does not contain a package specification, skip it
-                    continue
-    
-    return packages
+def parse_manifest(filepath):
+    if filepath.endswith('.json'):
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                packages = []
+                deps = data.get('dependencies', {})
+                for pkg, ver in deps.items():
+                    packages.append({
+                        'package': pkg,
+                        'version': ver,
+                        'manifest_type': 'npm'
+                    })
+                return packages
+        except Exception:
+            return []
+
+    elif filepath.endswith('.txt'):
+        packages = []
+        try:
+            with open(filepath, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'):
+                        continue
+                    # Match valid pip requirements lines (package name + specifiers >= or <)
+                    match = re.match(r'^([a-zA-Z0-9_.-]+)\s*([><]=?.*)$', line)
+                    if match:
+                        pkg_name = match.group(1)
+                        version = match.group(2) or ''
+                        packages.append({
+                            'package': pkg_name,
+                            'version': version,
+                            'manifest_type': 'pip'
+                        })
+        except Exception:
+            return []
+        return packages
+
+    return []
