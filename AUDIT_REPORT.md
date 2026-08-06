@@ -2,65 +2,65 @@
 
 | Package | Version | License | Status | Citation |
 |---|---|---|---|---|
-| follow-redirects | ^1.15.6 |  | unknown | no entry for 'follow-redirects' in license_db.json — license could not be verified |
-| form-data | ^4.0.4 |  | unknown | no entry for 'form-data' in license_db.json — license could not be verified |
-| proxy-from-env | ^1.1.0 |  | unknown | no entry for 'proxy-from-env' in license_db.json — license could not be verified |
-| @babel/core | ^7.23.9 |  | unknown | no entry for '@babel/core' in license_db.json — license could not be verified |
-| @babel/preset-env | ^7.23.9 |  | unknown | no entry for '@babel/preset-env' in license_db.json — license could not be verified |
-| @commitlint/cli | ^17.8.1 |  | unknown | no entry for '@commitlint/cli' in license_db.json — license could not be verified |
-| @commitlint/config-conventional | ^17.8.1 |  | unknown | no entry for '@commitlint/config-conventional' in license_db.json — license could not be verified |
-| @release-it/conventional-changelog | ^5.1.1 |  | unknown | no entry for '@release-it/conventional-changelog' in license_db.json — license could not be verified |
-| @rollup/plugin-alias | ^5.1.0 |  | unknown | no entry for '@rollup/plugin-alias' in license_db.json — license could not be verified |
-| @rollup/plugin-babel | ^5.3.1 |  | unknown | no entry for '@rollup/plugin-babel' in license_db.json — license could not be verified |
-| @rollup/plugin-commonjs | ^15.1.0 |  | unknown | no entry for '@rollup/plugin-commonjs' in license_db.json — license could not be verified |
-| @rollup/plugin-json | ^4.1.0 |  | unknown | no entry for '@rollup/plugin-json' in license_db.json — license could not be verified |
-| @rollup/plugin-multi-entry | ^4.1.0 |  | unknown | no entry for '@rollup/plugin-multi-entry' in license_db.json — license could not be verified |
-| @rollup/plugin-node-resolve | ^9.0.0 |  | unknown | no entry for '@rollup/plugin-node-resolve' in license_db.json — license could not be verified |
-| abortcontroller-polyfill | ^1.7.5 |  | unknown | no entry for 'abortcontroller-polyfill' in license_db.json — license could not be verified |
-| auto-changelog | ^2.4.0 |  | unknown | no entry for 'auto-changelog' in license_db.json — license could not be verified |
-| body-parser | ^1.20.2 |  | unknown | no entry for 'body-parser' in license_db.json — license could not be verified |
-| c8 | ^10.1.3 |  | unknown | no entry for 'c8' in license_db.json — license could not be verified |
-| chalk | ^5.3.0 |  | unknown | no entry for 'chalk' in license_db.json — license could not be verified |
-| coveralls | ^3.1.1 |  | unknown | no entry for 'coveralls' in license_db.json — license could not be verified |
-| cross-env | ^7.0.3 |  | unknown | no entry for 'cross-env' in license_db.json — license could not be verified |
-| dev-null | ^0.1.1 |  | unknown | no entry for 'dev-null' in license_db.json — license could not be verified |
-| dtslint | ^4.2.1 |  | unknown | no entry for 'dtslint' in license_db.json — license could not be verified |
-| es6-promise | ^4.2.8 |  | unknown | no entry for 'es6-promise' in license_db.json — license could not be verified |
-| eslint | ^8.56.0 |  | unknown | no entry for 'eslint' in license_db.json — license could not be verified |
+| follow-redirects | ^1.15.6 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| form-data | ^4.0.4 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| proxy-from-env | ^1.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @babel/core | ^7.23.9 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @babel/preset-env | ^7.23.9 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @commitlint/cli | ^17.8.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @commitlint/config-conventional | ^17.8.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @release-it/conventional-changelog | ^5.1.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-alias | ^5.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-babel | ^5.3.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-commonjs | ^15.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-json | ^4.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-multi-entry | ^4.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| @rollup/plugin-node-resolve | ^9.0.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| abortcontroller-polyfill | ^1.7.5 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| auto-changelog | ^2.4.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| body-parser | ^1.20.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| c8 | ^10.1.3 | ISC | allowed | license 'ISC' matches the 'allowed' list in policy.json |
+| chalk | ^5.3.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| coveralls | ^3.1.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| cross-env | ^7.0.3 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| dev-null | ^0.1.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| dtslint | ^4.2.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| es6-promise | ^4.2.8 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| eslint | ^8.56.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
 | express | ^4.18.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
-| formdata-node | ^5.0.1 |  | unknown | no entry for 'formdata-node' in license_db.json — license could not be verified |
-| formidable | ^2.1.2 |  | unknown | no entry for 'formidable' in license_db.json — license could not be verified |
-| fs-extra | ^10.1.0 |  | unknown | no entry for 'fs-extra' in license_db.json — license could not be verified |
-| get-stream | ^3.0.0 |  | unknown | no entry for 'get-stream' in license_db.json — license could not be verified |
-| gulp | ^4.0.2 |  | unknown | no entry for 'gulp' in license_db.json — license could not be verified |
-| handlebars | ^4.7.8 |  | unknown | no entry for 'handlebars' in license_db.json — license could not be verified |
-| husky | ^8.0.3 |  | unknown | no entry for 'husky' in license_db.json — license could not be verified |
-| istanbul-instrumenter-loader | ^3.0.1 |  | unknown | no entry for 'istanbul-instrumenter-loader' in license_db.json — license could not be verified |
-| jasmine-core | ^2.99.1 |  | unknown | no entry for 'jasmine-core' in license_db.json — license could not be verified |
-| karma | ^6.3.17 |  | unknown | no entry for 'karma' in license_db.json — license could not be verified |
-| karma-chrome-launcher | ^3.2.0 |  | unknown | no entry for 'karma-chrome-launcher' in license_db.json — license could not be verified |
-| karma-firefox-launcher | ^2.1.2 |  | unknown | no entry for 'karma-firefox-launcher' in license_db.json — license could not be verified |
-| karma-jasmine | ^1.1.2 |  | unknown | no entry for 'karma-jasmine' in license_db.json — license could not be verified |
-| karma-jasmine-ajax | ^0.1.13 |  | unknown | no entry for 'karma-jasmine-ajax' in license_db.json — license could not be verified |
-| karma-rollup-preprocessor | ^7.0.8 |  | unknown | no entry for 'karma-rollup-preprocessor' in license_db.json — license could not be verified |
-| karma-safari-launcher | ^1.0.0 |  | unknown | no entry for 'karma-safari-launcher' in license_db.json — license could not be verified |
-| karma-sauce-launcher | ^4.3.6 |  | unknown | no entry for 'karma-sauce-launcher' in license_db.json — license could not be verified |
-| karma-sinon | ^1.0.5 |  | unknown | no entry for 'karma-sinon' in license_db.json — license could not be verified |
-| karma-sourcemap-loader | ^0.3.8 |  | unknown | no entry for 'karma-sourcemap-loader' in license_db.json — license could not be verified |
-| memoizee | ^0.4.15 |  | unknown | no entry for 'memoizee' in license_db.json — license could not be verified |
-| minimist | ^1.2.8 |  | unknown | no entry for 'minimist' in license_db.json — license could not be verified |
-| mocha | ^10.3.0 |  | unknown | no entry for 'mocha' in license_db.json — license could not be verified |
-| multer | ^1.4.4 |  | unknown | no entry for 'multer' in license_db.json — license could not be verified |
-| pacote | ^20.0.0 |  | unknown | no entry for 'pacote' in license_db.json — license could not be verified |
-| pretty-bytes | ^6.1.1 |  | unknown | no entry for 'pretty-bytes' in license_db.json — license could not be verified |
-| release-it | ^15.11.0 |  | unknown | no entry for 'release-it' in license_db.json — license could not be verified |
-| rollup | ^2.79.1 |  | unknown | no entry for 'rollup' in license_db.json — license could not be verified |
-| rollup-plugin-auto-external | ^2.0.0 |  | unknown | no entry for 'rollup-plugin-auto-external' in license_db.json — license could not be verified |
-| rollup-plugin-bundle-size | ^1.0.3 |  | unknown | no entry for 'rollup-plugin-bundle-size' in license_db.json — license could not be verified |
-| rollup-plugin-terser | ^7.0.2 |  | unknown | no entry for 'rollup-plugin-terser' in license_db.json — license could not be verified |
-| selfsigned | ^3.0.1 |  | unknown | no entry for 'selfsigned' in license_db.json — license could not be verified |
-| sinon | ^4.5.0 |  | unknown | no entry for 'sinon' in license_db.json — license could not be verified |
-| stream-throttle | ^0.1.3 |  | unknown | no entry for 'stream-throttle' in license_db.json — license could not be verified |
-| string-replace-async | ^3.0.2 |  | unknown | no entry for 'string-replace-async' in license_db.json — license could not be verified |
-| tar-stream | ^3.1.7 |  | unknown | no entry for 'tar-stream' in license_db.json — license could not be verified |
-| typescript | ^4.9.5 |  | unknown | no entry for 'typescript' in license_db.json — license could not be verified |
+| formdata-node | ^5.0.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| formidable | ^2.1.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| fs-extra | ^10.1.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| get-stream | ^3.0.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| gulp | ^4.0.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| handlebars | ^4.7.8 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| husky | ^8.0.3 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| istanbul-instrumenter-loader | ^3.0.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| jasmine-core | ^2.99.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma | ^6.3.17 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-chrome-launcher | ^3.2.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-firefox-launcher | ^2.1.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-jasmine | ^1.1.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-jasmine-ajax | ^0.1.13 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-rollup-preprocessor | ^7.0.8 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-safari-launcher | ^1.0.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-sauce-launcher | ^4.3.6 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-sinon | ^1.0.5 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| karma-sourcemap-loader | ^0.3.8 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| memoizee | ^0.4.15 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| minimist | ^1.2.8 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| mocha | ^10.3.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| multer | ^1.4.4 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| pacote | ^20.0.0 | ISC | allowed | license 'ISC' matches the 'allowed' list in policy.json |
+| pretty-bytes | ^6.1.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| release-it | ^15.11.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| rollup | ^2.79.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| rollup-plugin-auto-external | ^2.0.0 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| rollup-plugin-bundle-size | ^1.0.3 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| rollup-plugin-terser | ^7.0.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| selfsigned | ^3.0.1 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| sinon | ^4.5.0 | BSD-3-Clause | allowed | license 'BSD-3-Clause' matches the 'allowed' list in policy.json |
+| stream-throttle | ^0.1.3 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| string-replace-async | ^3.0.2 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| tar-stream | ^3.1.7 | MIT | allowed | license 'MIT' matches the 'allowed' list in policy.json |
+| typescript | ^4.9.5 | Apache-2.0 | allowed | license 'Apache-2.0' matches the 'allowed' list in policy.json |
