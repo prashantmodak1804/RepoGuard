@@ -9,7 +9,9 @@ def parse_manifest(filepath):
                 data = json.load(f)
                 packages = []
                 deps = data.get('dependencies', {})
-                for pkg, ver in deps.items():
+                dev_deps = data.get('devDependencies', {})
+                all_deps = {**deps, **dev_deps}
+                for pkg, ver in all_deps.items():
                     packages.append({
                         'package': pkg,
                         'version': ver,
