@@ -236,8 +236,8 @@ The `specs/001-license-compliance-agent/` directory contains the original spec, 
   (e.g. coding agents, CI services, spec-kit tooling) that aren't captured above.
 -->
 
-- _add tool/workflow_
-- _add tool/workflow_
+- GitHub Speckit
+- Cline extension in VS code
 
 ---
 
