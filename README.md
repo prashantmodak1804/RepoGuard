@@ -222,10 +222,10 @@ The `specs/001-license-compliance-agent/` directory contains the original spec, 
 
 | Stage | Model | Notes |
 |---|---|---|
-| Spec / planning | _add model id_ | |
-| Implementation | _add model id_ | |
-| Debugging / fixes | _add model id_ | |
-| Code review | _add model id_ | |
+| Spec / planning | meta/llama-3.3-70b-instruct | |
+| Implementation | meta/llama-3.3-70b-instruct | |
+| Debugging / fixes | meta/llama-3.3-70b-instruct | |
+| Code review | claude.ai | |
 
 ---
 
